@@ -574,4 +574,28 @@ ServerEvents.recipes(event => {
     .inputFluids(Fluid.of("gtceu:lubricant", 50))
     .outputStress(1048576)
     .duration(200)
+
+  event.recipes.gtceu.boom_of_create("boom_of_create1")
+    .itemInputs(["gtceu:industrial_tnt"])
+    .inputFluids(Fluid.of("gtceu:pcb_coolant", 50))
+    .outputStress(16777216)
+    .duration(160)
+
+  event.recipes.gtceu.boom_of_create("boom_of_create2")
+    .itemInputs(["4x minecraft:tnt"])
+    .inputFluids(Fluid.of("gtceu:pcb_coolant", 50))
+    .outputStress(16777216)
+    .duration(160)
+
+  event.recipes.gtceu.boom_of_create("boom_of_create3")
+    .itemInputs(["2x gtceu:dynamite"])
+    .inputFluids(Fluid.of("gtceu:pcb_coolant", 50))
+    .outputStress(16777216)
+    .duration(160)
+
+  event.recipes.gtceu.boom_of_create("boom_of_create4")
+    .itemInputs(["8x gtceu:powderbarrel"])
+    .inputFluids(Fluid.of("gtceu:pcb_coolant", 50))
+    .outputStress(16777216)
+    .duration(160)
 })
